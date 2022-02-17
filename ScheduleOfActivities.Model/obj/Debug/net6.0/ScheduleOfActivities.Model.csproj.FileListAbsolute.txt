@@ -1,0 +1,12 @@
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\bin\Debug\net6.0\ScheduleOfActivities.Model.deps.json
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\bin\Debug\net6.0\ScheduleOfActivities.Model.dll
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\bin\Debug\net6.0\ScheduleOfActivities.Model.pdb
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\ScheduleOfActivities.Model.csproj.AssemblyReference.cache
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\ScheduleOfActivities.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\ScheduleOfActivities.Model.AssemblyInfoInputs.cache
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\ScheduleOfActivities.Model.AssemblyInfo.cs
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\ScheduleOfActivities.Model.csproj.CoreCompileInputs.cache
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\ScheduleOfActivities.Model.dll
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\refint\ScheduleOfActivities.Model.dll
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\ScheduleOfActivities.Model.pdb
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Model\obj\Debug\net6.0\ref\ScheduleOfActivities.Model.dll

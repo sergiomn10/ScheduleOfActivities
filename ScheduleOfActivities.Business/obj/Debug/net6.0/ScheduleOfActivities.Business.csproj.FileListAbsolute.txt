@@ -1,0 +1,17 @@
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\bin\Debug\net6.0\ScheduleOfActivities.Business.deps.json
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\bin\Debug\net6.0\ScheduleOfActivities.Business.dll
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\bin\Debug\net6.0\ScheduleOfActivities.Business.pdb
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\bin\Debug\net6.0\ScheduleOfActivities.DataAccess.dll
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\bin\Debug\net6.0\ScheduleOfActivities.Model.dll
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\bin\Debug\net6.0\ScheduleOfActivities.DataAccess.pdb
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\bin\Debug\net6.0\ScheduleOfActivities.Model.pdb
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ScheduleOfActivities.Business.csproj.AssemblyReference.cache
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ScheduleOfActivities.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ScheduleOfActivities.Business.AssemblyInfoInputs.cache
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ScheduleOfActivities.Business.AssemblyInfo.cs
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ScheduleOfActivities.Business.csproj.CoreCompileInputs.cache
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ScheduleOfActivities.Business.csproj.CopyComplete
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ScheduleOfActivities.Business.dll
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\refint\ScheduleOfActivities.Business.dll
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ScheduleOfActivities.Business.pdb
+C:\Users\Itzayana Reyes\source\repos\ScheduleOfActivities\ScheduleOfActivities.Business\obj\Debug\net6.0\ref\ScheduleOfActivities.Business.dll
