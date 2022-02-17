@@ -21,7 +21,7 @@ app.MapGet("/",() => @"Objetivo
                         Implementar un CRUD con Net Core Web Api 
                         en el cual se puedan Agregar nuevas actividades, 
                         Re - agendar, Cancelar y Listar las actividades.");
-app.MapGet("/api/propertyList", async (ActivityProxy proxy) => await proxy.GetAllProperty());
+app.MapGet("/api/activitiesList", async (ActivityProxy proxy) => await proxy.GetAllProperty());
 
 app.MapPost("/api/createActivity", async (ActivityModel model, ActivityProxy proxy ) => 
 {
