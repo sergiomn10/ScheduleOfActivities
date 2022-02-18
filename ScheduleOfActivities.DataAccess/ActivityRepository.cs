@@ -59,6 +59,7 @@ namespace ScheduleOfActivities.DataAccess
             {
                 result.schedule = model.schedule;
                 result.status = model.status;
+                result.updated_at = DateTime.Now;
                 await DB.SaveChangesAsync();
             }
             return true;

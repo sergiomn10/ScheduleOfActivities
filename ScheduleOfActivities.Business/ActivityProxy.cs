@@ -78,11 +78,11 @@ namespace ScheduleOfActivities.Business
             }
         }
 
-        public async Task<bool> RescheduleActivity(ActivityModel model)
+        public async Task<bool> RescheduleActivity(int activity_id, DateTime schedule)
         {
             try
             {
-                var activityResult = ActivityRepository.GetActivityDetail(model.id).Result;
+                var activityResult = ActivityRepository.GetActivityDetail(activity_id).Result;
 
                 if (activityResult == null)
                 {
@@ -93,8 +93,8 @@ namespace ScheduleOfActivities.Business
                 {
                     return false;
                 }
-
-                await ActivityRepository.UpdateActivity(model);
+                activityResult.schedule = schedule;
+                await ActivityRepository.UpdateActivity(activityResult);
 
                 return true;
             }
