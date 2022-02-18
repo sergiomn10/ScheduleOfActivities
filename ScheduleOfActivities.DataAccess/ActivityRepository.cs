@@ -35,6 +35,23 @@ namespace ScheduleOfActivities.DataAccess
 
         }
 
+        public async Task<List<ActivityModel>> GetActivityListByDates(DateTime? startDate, DateTime? endDate)
+        {
+            var r = await DB.Activity.ToListAsync();
+            if (startDate == null || endDate == null)
+            {
+               
+                return await DB.Activity.Where(w => DateTime.Now.AddDays(-3) <=  w.schedule.Date 
+                                                && w.schedule.Date <= DateTime.Now.AddDays(2).Date).ToListAsync();
+            }
+
+            DateTime sd = startDate.HasValue ? startDate.Value : DateTime.Now;
+            DateTime ed = endDate.HasValue ? endDate.Value : DateTime.Now;
+            return await DB.Activity.Where(w => sd.Date  >= w.schedule.Date
+                                               && w.schedule.Date <= ed.Date).ToListAsync();
+
+        }
+
         public async Task<bool> UpdateActivity(ActivityModel model) 
         {
             var result = await DB.Activity.SingleOrDefaultAsync(s => s.id == model.id);

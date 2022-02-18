@@ -14,17 +14,43 @@ namespace ScheduleOfActivities.Business
         private PropertyRepository PropertyRepository;
         private ActivityRepository ActivityRepository;
         public ActivityProxy(PropertyRepository propertyRepository,
-            ActivityRepository activityRepository) 
+            ActivityRepository activityRepository)
         {
             PropertyRepository = propertyRepository;
             ActivityRepository = activityRepository;
         }
-        public async Task<List<PropertyModel>> GetAllProperty() 
+        public async Task<List<ActivityResponseModel>> GetActivitiesList(DateTime? startDate, DateTime? endDate)
         {
-            return await PropertyRepository.GetAllProperty();
+            try
+            {
+                var t = await PropertyRepository.GetAllProperty();
+                var result = await ActivityRepository.GetActivityListByDates(startDate, endDate);
+                return result.Select(x => new ActivityResponseModel()
+                {
+                    id = x.id,
+                    schedule = x.schedule,
+                    title = x.title,
+                    created_at = x.created_at,
+                    status = x.status,
+                    condition = (x.status.Equals("ACTIVO") && x.schedule.Date >= DateTime.Now.Date) ? "PENDIENTE A REALIZAR" :
+                    ((x.status.Equals("ACTIVO") && x.schedule.Date <= DateTime.Now.Date) ? "ATRASADA" : "FINALIZADA"),
+                    property = new PropertyResponseModel()
+                    {
+                        id = x.propertyModel.id,
+                        title = x.propertyModel.title,
+                        address = x.propertyModel.address
+                    },
+                    survey = "http://localhost:5279/survey/index/" + x.id
+                }).ToList();
+            }
+            catch (Exception ex)
+            {
+
+                return new List<ActivityResponseModel>();
+            }
         }
 
-        public async Task<bool> CreateActivity(ActivityModel model) 
+        public async Task<bool> CreateActivity(ActivityModel model)
         {
             try
             {
@@ -52,7 +78,7 @@ namespace ScheduleOfActivities.Business
             }
         }
 
-        public async Task<bool> RescheduleActivity(ActivityModel model) 
+        public async Task<bool> RescheduleActivity(ActivityModel model)
         {
             try
             {

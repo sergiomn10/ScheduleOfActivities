@@ -21,7 +21,7 @@ namespace ScheduleOfActivities.Model
         public string status { get; set; } = string.Empty;
 
         [ForeignKey("id")]
-        public PropertyModel propertyModel { get; set; }
+        public virtual PropertyModel propertyModel { get; set; }
         public List<SurveyModel> surveysList { get; set; }
     }
 }

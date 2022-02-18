@@ -24,6 +24,6 @@ namespace ScheduleOfActivities.Model
 
         public string status { get; set; } = string.Empty;
 
-        public List<ActivityModel>  activitiesList { get; set; }
+        public virtual List<ActivityModel>  activitiesList { get; set; }
     }
 }

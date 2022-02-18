@@ -16,12 +16,13 @@ builder.Services.AddTransient<ActivityRepository>();
 var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 app.MapGet("/",() => @"Objetivo
                         Implementar un CRUD con Net Core Web Api 
                         en el cual se puedan Agregar nuevas actividades, 
                         Re - agendar, Cancelar y Listar las actividades.");
-app.MapGet("/api/activitiesList", async (ActivityProxy proxy) => await proxy.GetAllProperty());
+app.MapGet("/api/activitiesList", async (DateTime? sd, DateTime? ed ,ActivityProxy proxy) => await proxy.GetActivitiesList(sd,ed));
 
 app.MapPost("/api/createActivity", async (ActivityModel model, ActivityProxy proxy ) => 
 {
